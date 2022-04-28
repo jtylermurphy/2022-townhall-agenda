@@ -24,9 +24,14 @@
         color: var(--slate-900);
       }
       .day {
-        max-width: 320px;
         flex-grow: 0;
         flex-shrink: 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        .day {
+          max-width: 320px;
+        }
       }
       .day h2 {
         font-weight: bold;
@@ -44,14 +49,14 @@
       }
 
       .item h3 {
-        font-size: 1rem;
-        font-weight: 300;
+        font-size: 1.125rem;
+        font-weight: 500;
         margin-bottom: 0;
       }
 
       .time {
         font-size: 0.875rem;
-        font-weight: 500;
+        font-weight: 300;
       }
 
       .attire {
@@ -68,10 +73,9 @@
       }
 
       .speaker {
-        font-size: 0.875rem;
-        color: red;
+        font-size: 0.75rem;
+        color: var(--slate-500);
         text-transform: uppercase;
-        color: ;
       }
     </style>
   </head>
@@ -121,11 +125,9 @@
             </p>
           </div>
           <div class="item">
-            <h3>
-              Meet and Greet Welcome Reception (Sponsored by Caliber Home Loans,
-              Inc.)
-            </h3>
+            <h3>Meet and Greet Welcome Reception</h3>
             <p class="time">7:00 PM - 9:00 PM</p>
+            <p class="sponsor">Sponsored by: Caliber Home Loans, Inc.</p>
           </div>
         </div>
         <div class="day">
@@ -136,30 +138,39 @@
             <h3>SUNRISE YOGA</h3>
             <p class="time">5:45 AM - 6:00 AM</p>
             <p class="speaker">Ty M Carolina</p>
-            <p class="attire">Workout Attire</p>
+            <p class="attire">
+              <i class="fa-solid fa-shirt-tank-top"></i> Workout Attire
+            </p>
             <p class="time">6:00 AM - 8:00 AM</p>
             <p class="speaker">Pamela Eggleton</p>
-            <p class="attire">Workout Attire</p>
+            <p class="attire">
+              <i class="fa-solid fa-shirt-tank-top"></i> Workout Attire
+            </p>
           </div>
           <p>10:15 AM: Bus Departs Hotel Lobby</p>
           <div class="item">
             <h3>
               Teambuilding and Leadership Experience at Marine Corps Base
-              Quantico (Sponsored by Deloitte)
+              Quantico
             </h3>
             <p>Lunch Provided</p>
             <p class="time">11:00 AM - 1:00 PM</p>
+            <p class="sponsor">Sponsored by: Deloitte</p>
           </div>
           <div class="item">
             <h3>Marine Corps Base Quantico Tee Marie Hanible</h3>
-            <p class="attire">Workout Attire</p>
-            <p class="time">1:20 PM Bus Returns</p>
+            <p class="attire">
+              <i class="fa-solid fa-shirt-tank-top"></i> Workout Attire
+            </p>
           </div>
+          <p class="time">1:20 PM Bus Returns</p>
           <div class="item">
             <h3>Congressional Advocacy 101 - Tips and Techniques</h3>
             <p class="time">1:30 PM - 1:45 PM</p>
             <p class="attire">
-              Casual Attire + AFI MSOY T-Shirt Workout Attire
+              <i class="fa-solid fa-shirt-tank-top"></i> Casual Attire + AFI
+              MSOY T-Shirt / <i class="fa-solid fa-shirt-tank-top"></i> Workout
+              Attire
             </p>
           </div>
           <div class="item">
@@ -175,12 +186,17 @@
             <p class="speaker">
               U.S. Senator Tim Kaine, U.S. Senator John Boozman, Besa Pinchotti
             </p>
-            <p class="attire">Business Formal Attire</p>
+            <p class="attire">
+              <i class="fa-solid fa-user-tie"></i> Business Formal Attire
+            </p>
           </div>
           <div class="item">
-            <h3>VIP Networking Reception (Sponsored by PCS Grades)</h3>
+            <h3>VIP Networking Reception</h3>
             <p class="time">7:00 PM - 9:00 PM</p>
-            <p class="attire">Business Formal Attire</p>
+            <p class="attire">
+              <i class="fa-solid fa-user-tie"></i> Business Formal Attire
+            </p>
+            <p class="sponsor">Sponsored by: PCS Grades</p>
           </div>
         </div>
         <div class="day">
@@ -188,7 +204,10 @@
           <div class="item">
             <h3>AFI MSOY 2022 Town Hall: Make It Matter</h3>
             <p class="time">8:30 AM - 4:00 PM</p>
-            <p class="attire">Business Casual Attire</p>
+            <p class="attire">
+              <i class="fa-solid fa-shirt-long-sleeve"></i> Business Casual
+              Attire
+            </p>
           </div>
           <div class="item">
             <h3>Breakfast/Registration/Greetings</h3>
@@ -200,7 +219,7 @@
             <p class="time">9:00 AM - 9:30 AM</p>
           </div>
           <div class="item">
-            <h3>Military Family Advisory Network, Shannon Razsadin</h3>
+            <h3>Military Family Advisory Network</h3>
             <p class="time">9:30 AM - 9:50 AM</p>
             <p class="speaker">Shannon Razsadin</p>
           </div>
@@ -213,9 +232,9 @@
             <p class="time">10:10 AM - 10:30 AM</p>
           </div>
           <div class="item">
-            <h3>Hiring Our Heroes, Brian Alvarado</h3>
+            <h3>Hiring Our Heroes</h3>
             <p class="time">10:30 AM - 10:50 AM</p>
-            <p>Brian Alvarado</p>
+            <p class="speaker">Brian Alvarado</p>
           </div>
           <div class="item">
             <h3>Keynote</h3>
@@ -230,15 +249,12 @@
             <p class="time">12:45 PM - 12:55 PM</p>
           </div>
           <div class="item">
-            <h3>Modern Military Association of America, Jennifer Dane</h3>
+            <h3>Modern Military Association of America</h3>
             <p class="time">12:55 PM - 1:15 PM</p>
             <p class="speaker">Jennifer Dane</p>
           </div>
           <div class="item">
-            <h3>
-              Council for Military Spouse Clubs, Carolyn Crissman and Tracy
-              Steele
-            </h3>
+            <h3>Council for Military Spouse Clubs</h3>
             <p class="time">1:15 PM - 1:40 PM</p>
             <p class="speaker">Carolyn Crissman, PMP / CNP, Tracy Steele</p>
           </div>
@@ -248,7 +264,7 @@
             <p class="time">1:40 PM - 2:00 PM</p>
           </div>
           <div class="item">
-            <h3>U.S. Military Spouse Chamber of Commerce, Stephanie Brown</h3>
+            <h3>U.S. Military Spouse Chamber of Commerce</h3>
             <p class="time">2:00 PM - 2:20 PM</p>
             <p class="speaker">Stephanie Brown</p>
           </div>
@@ -288,30 +304,39 @@
           <div class="item">
             <h3>AFI MSOY Awards Ceremony & Luncheon* (By Invitation Only)</h3>
             <p class="time">11:00 AM - 2:00 PM</p>
-            <p class="attire">Business Formal Attire</p>
+            <p class="attire">
+              <i class="fa-solid fa-user-tie"></i> Business Formal Attire
+            </p>
           </div>
           <div class="item">
             <h3>Military OneSource Call Center Tour</h3>
             <p class="time">3:00 PM - 4:00 PM</p>
-            <p>3101 Wilson Blvd Arlington, Virginia, 22201</p>
-            <p class="attire">Casual Attire + AFI MSOY T-Shirt</p>
+            <p class="location">3101 Wilson Blvd Arlington, Virginia, 22201</p>
+            <p class="attire">
+              <i class="fa-solid fa-shirt"></i> Casual Attire + AFI MSOY T-Shirt
+            </p>
           </div>
         </div>
         <div class="day">
           <h2>Friday, May 6</h2>
           <div class="item">
-            <h3>Million Mile Walk: Meet in hotel lobby</h3>
+            <h3>Million Mile Walk</h3>
+            <p>Meet in hotel lobby</p>
             <p class="time">7:30 AM - 9:00 AM</p>
             <p class="attire">
-              Casual Attire + AFI MSOY T-Shirt Workout Attire
+              <i class="fa-solid fa-shirt"></i>
+              Casual Attire + AFI MSOY T-Shirt /
+              <i class="fa-solid fa-shirt-tank-top"></i> Workout Attire
             </p>
           </div>
           <div class="item">
             <h3>AFI MSOY Day of Service - Martha's Table</h3>
-            <p>8:30 AM: Shuttle Departs</p>
+            <p class="time">8:30 AM: Shuttle Departs</p>
             <p class="time">9:00 AM - 4:00 PM</p>
-            <p>2375 Elvans Rd SE, Washington, DC 20020</p>
-            <p class="attire">Casual Attire + AFI MSOY T-Shirt</p>
+            <p class="location">2375 Elvans Rd SE, Washington, DC 20020</p>
+            <p class="attire">
+              <i class="fa-solid fa-shirt"></i> Casual Attire + AFI MSOY T-Shirt
+            </p>
           </div>
         </div>
       </div>

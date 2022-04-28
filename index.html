@@ -13,6 +13,16 @@
     ></script>
 
     <style>
+      :root {
+        --slate-50: rgb(248, 250, 252);
+        --slate-100: rgb(241, 245, 249);
+        --slate-500: rgb(100, 116, 139);
+        --slate-900: rgb(15, 23, 42);
+      }
+
+      body {
+        color: var(--slate-900);
+      }
       .day {
         max-width: 320px;
         flex-grow: 0;
@@ -46,16 +56,22 @@
 
       .attire {
         font-size: 0.625rem;
-        background-color: #004976;
+        /* background-color: #004976;
         border-radius: 24px;
         color: #fff;
         padding: 0.25rem 0.75rem;
-        display: inline-block;
+        display: inline-block; */
+      }
+
+      .attire .svg-inline--fa {
+        margin-right: 0.25rem;
       }
 
       .speaker {
         font-size: 0.875rem;
         color: red;
+        text-transform: uppercase;
+        color: ;
       }
     </style>
   </head>
@@ -65,10 +81,10 @@
       <p>** Schedule is subject to change **</p>
     </header>
     <div class="container mx-auto">
-      <div class="md:flex gap-8">
+      <div class="md:flex gap-8 md:overflow-scroll">
         <div class="day">
           <h2>Monday, May 2</h2>
-          <div class="item bg-white mb-4 drop-shadow-md p-2">
+          <div class="item">
             <h3>Check-in</h3>
             <p class="time">4:00 - 5:30PM</p>
             <p class="attire">
@@ -78,7 +94,9 @@
           <div class="item">
             <h3>Week Kick Off</h3>
             <p class="time">5:45 - 9:00PM</p>
-            <p class="attire">Casual Attire + AFI MSOY T-Shirt</p>
+            <p class="attire">
+              <i class="fa-solid fa-shirt"></i> Casual Attire + AFI MSOY T-Shirt
+            </p>
           </div>
 
           <div class="item">

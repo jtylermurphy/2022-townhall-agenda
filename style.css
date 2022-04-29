@@ -6,6 +6,8 @@
   --slate-500: rgb(100, 116, 139);
   --slate-900: rgb(15, 23, 42);
   --afi-light-blue: #0570c5;
+  --afi-dark-red: #881b26;
+  --afi-light-red: #cb2c30;
 }
 
 body {
@@ -105,7 +107,7 @@ header p {
   cursor: pointer;
 }
 .day.active {
-  border-bottom: 4px solid var(--afi-light-blue);
+  border-bottom: 4px solid var(--afi-light-red);
   opacity: 1;
 }
 
@@ -118,24 +120,18 @@ header p {
 
 .day p {
   font-size: 1rem;
-  color: var(--afi-light-blue);
+  color: var(--afi-light-red);
   margin: 0;
   margin-left: 1px;
 }
 
 @media screen and (min-width: 600px) {
   .day h2 {
-    font-weight: 700;
     font-size: 2.5rem;
-    margin: 0;
-    line-height: 2.5rem;
   }
 
   .day p {
     font-size: 1.25rem;
-    color: var(--afi-light-blue);
-    margin: 0;
-    margin-left: 1px;
   }
 }
 .agenda {
@@ -227,4 +223,9 @@ header p {
 .emoji {
   font-size: 2rem;
   font-style: normal;
+}
+
+.sponsors img {
+  max-width: 8rem;
+  margin-top: 1rem;
 }

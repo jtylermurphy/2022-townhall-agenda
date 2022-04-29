@@ -225,7 +225,25 @@ header p {
   font-style: normal;
 }
 
+.sponsors p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 2rem;
+  border-bottom: 1px solid var(--slate-900);
+}
+
+.sponsors p:first-child {
+  margin-top: 0.5rem;
+}
+
 .sponsors img {
-  max-width: 8rem;
+  max-width: 12rem;
   margin-top: 1rem;
+}
+
+.sponsors img.bronze {
+  max-width: 6rem;
+  display: inline-block;
+  margin-right: 1rem;
 }

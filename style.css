@@ -14,8 +14,8 @@ body {
 }
 
 a {
-  color: var(--afi-light-blue);
-  text-decoration: underline;
+  color: var(--afi-light-blue) !important;
+  text-decoration: underline !important;
 }
 
 header {

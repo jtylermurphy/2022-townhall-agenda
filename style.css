@@ -201,9 +201,6 @@ header p {
 }
 
 .container {
-  display: flex;
-  gap: 3rem;
-  max-width: 1000px !important;
 }
 
 .col__days {

@@ -25,11 +25,11 @@
     <div class="container md:flex mx-auto px-4 mb-16 md:max-w-5xl md:gap-12">
       <div class="col__days">
         <div class="days">
-          <div class="day active" data-target="#monday">
+          <div class="day" data-target="#monday">
             <h2>Mon</h2>
             <p>May 2</p>
           </div>
-          <div class="day" data-target="#tuesday">
+          <div class="day active" data-target="#tuesday">
             <h2>Tue</h2>
             <p>May 3</p>
           </div>
@@ -48,7 +48,7 @@
         </div>
         <div class="agenda">
           <!-- MONDAY -->
-          <div class="agenda__day" id="monday">
+          <div class="agenda__day" id="monday" style="display: none">
             <div class="event">
               <div class="event__content">
                 <h3>Check-In</h3>
@@ -100,7 +100,7 @@
             </div>
           </div>
           <!-- TUESDAY -->
-          <div class="agenda__day" id="tuesday" style="display: none">
+          <div class="agenda__day" id="tuesday">
             <div class="event">
               <div class="event__time">5:30 AM</div>
               <div class="event__content">
@@ -191,7 +191,7 @@
               </div>
               <div class="event__content">
                 <h3>VIP Networking Reception</h3>
-                <p class="sponsor">Sponsored by: PCS Grades</p>
+                <p class="sponsor">Sponsored by: PCSGrades</p>
               </div>
             </div>
           </div>
@@ -223,10 +223,6 @@
             <div class="event">
               <div class="event__time"></div>
               <div class="event__content"></div>
-              <!-- TODO
-                  Townhall Logo
-                  Sponsor Logos
-              -->
             </div>
             <div class="event">
               <div class="event__time"><p class="time">8:30 AM</p></div>
@@ -354,10 +350,6 @@
                 <h3>
                   AFI MSOY Awards Ceremony & Luncheon* (By Invitation Only)
                 </h3>
-                <!--
-                <p class="attire">
-                  <i class="fa-solid fa-user-tie"></i> Business Formal Attire
-                </p> -->
               </div>
             </div>
             <div class="event">
@@ -373,10 +365,6 @@
                 <p class="location">
                   3101 Wilson Blvd Arlington, Virginia, 22201
                 </p>
-                <!-- <p class="attire">
-                  <i class="fa-solid fa-shirt"></i> Casual Attire + AFI MSOY
-                  T-Shirt
-                </p> -->
               </div>
             </div>
           </div>
@@ -393,12 +381,6 @@
               <div class="event__content">
                 <h3>Million Mile Walk</h3>
                 <p>Meet in hotel lobby</p>
-
-                <!-- <p class="attire">
-                  <i class="fa-solid fa-shirt"></i>
-                  Casual Attire + AFI MSOY T-Shirt /
-                  <i class="fa-solid fa-shirt-tank-top"></i> Workout Attire
-                </p> -->
               </div>
             </div>
             <div class="event">
